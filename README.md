@@ -80,7 +80,7 @@ You will land into the  Agent “creation screen” by conversational assistance
 
 On this screen, you would be able to to provide Agent name, description, instructions, connect knowledge sources (only URLs to internet or SharePoint folders), and optionally, define starter prompts to guide user interactions. <br> <br>
 
-Start by providing a meaningful name, description… as well as an icon !!! We will now go setting up some instructions.
+Start by providing a meaningful name, description… as well as an icon !!! We will now go setting up some instructions. <br><br>
 
 ***Copilot Agent Instructions***<br>
 
