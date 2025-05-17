@@ -43,19 +43,13 @@ The following diagram illustrates the main components on this solution accelerat
 <br> <br>
 
 
-![Solution Accelerator Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_solDiagram.png "Solution Accelerator Diagram")
+![Solution Accelerator Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-JustDocs/blob/main/assets/images/EnergyAssetDataChat__Docs_solDiagram.png "Solution Accelerator Diagram")
 
 **A. The data landscape:** represented by structured data sources (like Azure Data Manager for Energy), including metadata and bulk data, and corresponding unstructured data sources (such as SharePoint or OneDrive, which contains data in the form of PDFs, Excel files, PowerPoint presentations, and other documents).
 
-**B. The consumption zone:** powered by OneLake under Microsoft Fabric, provides a data workspace for data mirrored from Azure Data Manager for Energy to all AI-driven Fabric workloads including but not limited to Fabric Data Agents, to facilitates the delivery of data to the Copilot Agent.
-
-**C. The Copilot Agent:** Specialized set of AI tools built to handle specific processes or solve business challenges, in this case to provide access to data insights from structured data store in ADME, and unstructured data store on corresponding SharePoint site. 
+**B. The Copilot Agent:** Specialized set of AI tools built to handle specific processes or solve business challenges, in this case to provide access to data insights from unstructured data store on corresponding SharePoint site. 
 They also automate tasks, analyze data, make decisions, and adapt to new challenges.
-To access the data, the solution uses “Knowledge Sources” that points to:
-<ol>
-  <li>a Fabric Data Agent connector (advanced) that data mirrored from Azure Data Manager for Energy</li>
-  <li>a SharePoint connector (featured) to the corresponding SharePoint site with New Zealand data</li>
-</ol>
+To access the data, the solution uses a “Knowledge Source” that points to a SharePoint Folder on the corresponding SharePoint site with New Zealand data
 
 ## Getting Started
 ### Prerequisites 
@@ -65,33 +59,6 @@ To access the data, the solution uses “Knowledge Sources” that points to:
     For this solution, we have selected the New Zealand Petroleum Exploration Data Pack as dataset, which features a large selection of open-file seismic and well data, interpretation projects, reports and studies. To understand more about the New Zealand Petroleum Exploration Data Pack here:<br>
     https://www.nzpam.govt.nz/maps-geoscience/petroleum-datapack<br>
   <strong>Note:</strong> You could also use your own datasets.</p>
-  </li>
-    <li> <p> <strong>Get an Azure Data Manager for Energy instance deployed</strong> <br>
-   With this QuickStart, you would be able to create an Azure Data Manager for Energy instance by using the Azure portal on a web browser.<br>
-    https://learn.microsoft.com/en-us/azure/energy-data-services/quickstart-create-microsoft-energy-data-services-instance</p>
-  </li>
-  <li> <p> <strong>Ingest your dataset in Azure Data Manager for Energy</strong> <br>
-   As mentioned before, you are welcome to ingest your own data or use data already ingested in your Azure Data Manager for Energy instance. If you need help ingesting your own data, read more in our knowledge base here:<br>
-    https://learn.microsoft.com/en-us/azure/energy-data-services/ <br> <br>
-    We have made available a prepared dataset with data from New Zealand Petroleum Exploration Data Pack ready to ingest in your Azure Data Manager for Energy instance. Please follow the ingestion instructions here:<br>
-   https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/ingestDemoDatasetsADME.MD<br> <BR>
-  <strong>Note:</strong> The dataset used in this solution / demo is &#169; Crown Copyright and have been reproduce with the permision from the New Zealand Petroleum and Minerals website at www.nzpam.govt.nz.</p>
-  </li>
-  <li> <p> <strong>Deploy “ADME-Fabric-Connector”</strong> <br>
-   Once your dataset is available, follow this QuickStart to mirror your structured data available in Azure Data Manager for Energy in Fabric:<br>
-    https://github.com/microsoft/ADME-Fabric-Connector/<br><br>
-    <strong>Note:</strong> If you encounter a "File Not Found" error, you may need to request access to this "Preview" capability<BR>
-
- [![Button Shield]][Shield]
-<br>
-
-<!---------------------------------------------------------------------------->
-[Button Shield]: https://img.shields.io/badge/Request_Access_to_Connector-37a779?style=for-the-badge
-[License]: LICENSE
-[Shield]: https://forms.office.com/r/Lst1gETaQm
-[KBD]: Types/KBD.md
-[#]: #
- 
   </li>
   <li> <p> <strong>Make available your unstructured data in SharePoint</strong> <br>
    Make sure that unstructured data in a form of geological, well, seismic interpretation and other reports as PDFs and images, are available on a SharePoint site / folder of your preferences. Please remember that the Agent will respect the entitlement / secutiry configuration in place.<br>
