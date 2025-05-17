@@ -76,11 +76,9 @@ and click on the "Create agent" option<br>
 
 You will land into the  Agent “creation screen” by conversational assistance, lets skip and go to configure by clicking the "Configure" option.
 
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstScreen.png)
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-JustDocs/blob/main/assets/images/M365Copilot_HomeConfigureEmptyVol1.png)
 
-On this screen, you would be able to to provide Agent name, description, instructions, connect knowledge sources (only URLs to internet or SharePoint folders), and optionally, define starter prompts to guide user interactions. 
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstDetails.png)
+On this screen, you would be able to to provide Agent name, description, instructions, connect knowledge sources (only URLs to internet or SharePoint folders), and optionally, define starter prompts to guide user interactions. <br> <br>
 
 Start by providing a meaningful name, description… as well as an icon !!! We will now go setting up some instructions.
 
@@ -88,7 +86,7 @@ Start by providing a meaningful name, description… as well as an icon !!! We w
 
 M365 Copilot Agent instructions will direct the behavior of the agent, including its tasks and how it completes them. Here is a sample set of instructions that we have used to set up the agent.<br><br>
 
-These instructions helps the data agent understand your data by writing a detailed system prompt. The folling instructions assumes the tables / views available on the mirrored data from Azure Data Manager for Energy into Fabric leverading the New Zealand Petroleum data pack
+These instructions helps the data agent understand your data by writing a detailed system prompt. The folling instructions assumes data leverading the New Zealand Petroleum data pack
 <br><br>
 
 ```markdown
@@ -109,47 +107,22 @@ General Guidelines:
 - Ask engaging follow on questions regarding what the user may want to use the information for
 
 ```
+With the "Instructions" and “Knowledge sources” already associated, you could click on “Create”.<br><br>
+
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-JustDocs/blob/main/assets/images/M365Copilot_HomeConfigureFilledVol1.png)
 
 > [!NOTE]
-> Content from SharePoint will only be available to authenticated end-users on your Company’s Tenant.
-
+> Content from SharePoint will only be available to authenticated and entitled end-users on your Company’s Tenant.
 <br>
-For the data mirrored from Azure Data Manager for Energy into Fabric Lakehouse, go to “Advanced” options<br>
 
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KsFabric.png)
+# Lets test the agent
+Lets use the following prompt:<br><br>
 
-Select the “Microsoft Fabric” option and then your “Data Agent” would appear in the list of options.<br><br>
+```markdown
+give me an executive summary of taranaki basin including the generation of a pie char that illustrates the number of wellbores per geological field in the basin
+```
 
-With the “Knowledge sources” already associated, you could click on “Create”.<br><br>
-
-***Testing your Copilot Agent***<br>
-Once your Agent in create you could start your tests and validate responses.
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_AgentTest.png)
-
-On the right-hand side, red square, is where your prompts would be enters and responses would appear.<br><br>
-
-In the middle, blue square, the whole processing would appear, and it would show details of the sources crawled. <br><br>
-
-Once you are satisfied with the responses, you could proceed to “Publish” your Agent
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Publish.png)
-
-Once your Agent is published, you will be able to see it in your Copilot Chat UI.<br><br>
-
-Go to https://copilot.cloud.microsoft/ or https://m365.cloud.microsoft/chat and select the option Get Agents
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_getAgent.png)
-
-Find your Agent by name, using the search capabilities, or looking under the category “Built for your org” and click on it
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_install.png)
-
-Now you could add your Agent to your environment and validate the agent from the Copilot Chat.
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_ChatUI.png)
-
-You will see know the Copilot Agent available in Copilot Chat, Team and M365 apps. 
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-JustDocs/blob/main/assets/images/M365Copilot_ResultsVol1.png)
 
 ## Sample Prompts
 Here are some sample promts for this dataset<br>
