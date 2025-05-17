@@ -70,24 +70,15 @@ To access the data, the solution uses a “Knowledge Source” that points to a 
 ### Create your M365 Copilot agent
 For our solution we are going to use M365 Copilot, so navigate to here using the following URL:<br><br>
 <a href="https://m365.cloud.microsoft/">https://m365.cloud.microsoft/</a>
+<br><br>
+and click on the "Create agent" option<br> 
+![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-JustDocs/blob/main/assets/images/M365Copilot_HomeCreateVol1.png)
 
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Home.png)
-
-Make sure that the environment is the one you have created in previous steps.
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Env.png)
-
-Select the “Create” option on the left-hand side of the screen. You will see a “Create Assistant” that would allow you to follow an specific “Template” or “start from scratch”
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateNew.png)
-
-Let’s start “from scratch”, to do that click the “New Agent” button.<br><br>
-
-You will land into the Copilot Agent “creation screen” by conversational assistance, lets skip and go to configure.
+You will land into the  Agent “creation screen” by conversational assistance, lets skip and go to configure by clicking the "Configure" option.
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstScreen.png)
 
-Once conversational creation experience is skipped, you will see an screen to provide Agent name, description, instructions, connect knowledge sources, and optionally, define starter prompts to guide user interactions. 
+On this screen, you would be able to to provide Agent name, description, instructions, connect knowledge sources (only URLs to internet or SharePoint folders), and optionally, define starter prompts to guide user interactions. 
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_CreateFirstDetails.png)
 
@@ -95,25 +86,15 @@ Start by providing a meaningful name, description… as well as an icon !!! We w
 
 ***Copilot Agent Instructions***<br>
 
-Similar to the Data Agent AI Instructions, Copilot Agent Instructions will direct the behavior of the agent, including its tasks and how it completes them. Here is a sample set of instructions that we have used to set up the solution.<br><br>
+M365 Copilot Agent instructions will direct the behavior of the agent, including its tasks and how it completes them. Here is a sample set of instructions that we have used to set up the agent.<br><br>
 
-[{SAMPLE COPILOT AGENT INSTRUCTIONS}](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/CopilotAgent-Instructions.MD)<br><br>
+These instructions helps the data agent understand your data by writing a detailed system prompt. The folling instructions assumes the tables / views available on the mirrored data from Azure Data Manager for Energy into Fabric leverading the New Zealand Petroleum data pack
+<br><br>
 
-***Adding knowledge sources to your Copilot Agent***<br>
+```markdown
+hello
 
-Now you would be able to add data, files, and other resources that your agent will use to learn. These sources form the basis for your agent's responses. Let’s click “Add Knowledge” and add our sources.
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KnowSouce.png)
-
-As mentioned from the beginning, the idea is to bring structured and unstructured data together to provide responses around Energy Assets. We selected:<BR>
-	<ul>
-  <li> <strong>SharePoint to host all unstructured data</strong> coming from the dataset provided by the New Zealand Petroleum data pack</li>
-  <li> <strong>Structured data mirrored from Azure Data Manager for Energy</strong> into Fabric Lakehouse coming from the same dataset provided by the New Zealand Petroleum data pack</li>
-</ul>
-
-For SharePoint, click on the corresponding option on the “Add knowledge” screen to connect to SharePoint as knowledge source
-
-![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_KsSharePoint.png)
+```
 
 > [!NOTE]
 > Content from SharePoint will only be available to authenticated end-users on your Company’s Tenant.
