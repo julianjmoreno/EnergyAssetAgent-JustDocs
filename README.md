@@ -38,6 +38,24 @@ Before you deep dive, we strongly recommend you get familiar with the following 
 | https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio/       |
 
 
+## Understanding the Solution
+The following diagram illustrates the main components on this solution accelerator
+<br> <br>
+
+
+![Solution Accelerator Diagram](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/EnergyAssetDataChat_solDiagram.png "Solution Accelerator Diagram")
+
+**A. The data landscape:** represented by structured data sources (like Azure Data Manager for Energy), including metadata and bulk data, and corresponding unstructured data sources (such as SharePoint or OneDrive, which contains data in the form of PDFs, Excel files, PowerPoint presentations, and other documents).
+
+**B. The consumption zone:** powered by OneLake under Microsoft Fabric, provides a data workspace for data mirrored from Azure Data Manager for Energy to all AI-driven Fabric workloads including but not limited to Fabric Data Agents, to facilitates the delivery of data to the Copilot Agent.
+
+**C. The Copilot Agent:** Specialized set of AI tools built to handle specific processes or solve business challenges, in this case to provide access to data insights from structured data store in ADME, and unstructured data store on corresponding SharePoint site. 
+They also automate tasks, analyze data, make decisions, and adapt to new challenges.
+To access the data, the solution uses “Knowledge Sources” that points to:
+<ol>
+  <li>a Fabric Data Agent connector (advanced) that data mirrored from Azure Data Manager for Energy</li>
+  <li>a SharePoint connector (featured) to the corresponding SharePoint site with New Zealand data</li>
+</ol>
 
 ### Create your M365 Copilot agent
 For our solution we are going to use M365 Copilot, so navigate to here using the following URL:<br><br>
