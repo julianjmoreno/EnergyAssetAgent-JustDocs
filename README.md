@@ -1,7 +1,7 @@
 > [!IMPORTANT]  
 > The conntent and views expressed here are personal and meant for information/education purposes only and not representative of my employer directly or indirectly and not investment advice. Any mention of company names are for illustrative examples only.
 > 
-# Vol1 - Chat with my Energy Asset Unstructured Data
+# Chat with my Energy Asset Unstructured Data - Vol 1
 Energy companies generate and rely on vast volumes of unstructured data—geological surveys, well logs, seismic interpretations, and production or drilling reports—often stored in PDFs, scanned documents, and images. These data sources hold critical insights, but extracting and interpreting them manually is time-consuming, error-prone, and inefficient.<br><br>
 
 This solution leverages the power of Microsoft Copilot and Copilot Studio to create intelligent, task-specific Copilot Agents that transform how energy companies access, analyze, and act on their unstructured data. By combining advanced AI, natural language understanding, and seamless integration with Microsoft 365 and Azure ecosystems, these agents automate data extraction, interpretation, and insight generation—turning static documents into dynamic intelligence.
