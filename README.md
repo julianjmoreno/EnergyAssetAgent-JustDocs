@@ -40,8 +40,8 @@ Before you deep dive, we strongly recommend you get familiar with the following 
 
 
 ### Create your M365 Copilot agent
-For our solution we are going to use Copilot Studio, so navigate to here using the following URL:<br><br>
-<a href="https://copilotstudio.microsoft.com/">https://copilotstudio.microsoft.com/</a>
+For our solution we are going to use M365 Copilot, so navigate to here using the following URL:<br><br>
+<a href="https://m365.cloud.microsoft/">https://m365.cloud.microsoft/</a>
 
 ![alt text](https://github.com/julianjmoreno/EnergyAssetAgent-ADME/blob/main/assets/images/CopilotStudio_Home.png)
 
